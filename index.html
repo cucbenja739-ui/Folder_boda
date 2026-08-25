@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestra Boda</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <h2>Nos Casamos</h2>
+
+            <h1>César <span>&</span> Aracely</h1>
+
+            <p>21 de noviembre de 2026</p>
+
+            <a
+    id="abrirInvitacion"
+    href="#bienvenida"
+    class="boton-principal">
+
+    Abrir invitación
+
+</a>
+
+        </div>
+
+    </section>
+
+    <!-- Reproductor de música de fondo -->
+    <audio id="musicaFondo" loop preload="auto">
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+    <button id="botonMusica" class="control-musica" aria-label="Reproducir música">
+        <span class="icono-musica">🎵</span>
+    </button>
+
+    <main id="contenido">
+
+    <section
+id="bienvenida"
+class="bienvenida animar">
+
+    <p class="subtitulo">
+        Con la bendición de Dios y de nuestras familias
+    </p>
+
+    <h2>
+        Tenemos el honor de invitarte a celebrar
+        el día más importante de nuestras vidas
+    </h2>
+
+    <div class="linea-decorativa"></div>
+
+</section>
+
+    <section class="contador animar">
+
+    <h2>Cuenta Regresiva</h2>
+
+    <div class="tiempo">
+
+        <div class="caja">
+
+            <span id="dias">120</span>
+
+            <p>Días</p>
+
+        </div>
+
+        <span class="separador-tiempo">:</span>
+
+        <div class="caja">
+
+            <span id="horas">12</span>
+
+            <p>Horas</p>
+
+        </div>
+
+        <span class="separador-tiempo">:</span>
+
+        <div class="caja">
+
+            <span id="minutos">35</span>
+
+            <p>Minutos</p>
+
+        </div>
+
+        <span class="separador-tiempo">:</span>
+
+        <div class="caja">
+
+            <span id="segundos">40</span>
+
+            <p>Segundos</p>
+
+        </div>
+
+    </div>
+
+<p class="mensaje">
+    Para celebrar el mejor día de nuestras vidas
+</p>
+
+<div class="linea-decorativa"></div>
+
+</section>
+
+<section class="historia">
+
+    <h2 class="titulo-seccion animar-escala">
+        Nuestra Historia
+    </h2>
+
+    <p class="subtitulo-seccion animar">
+
+        Toda historia de amor tiene un principio,
+        y la de nosotros no tendrá un final.
+
+    </p>
+
+    <div class="linea-tiempo"></div>
+
+    <article class="momento">
+
+        <div class="momento-imagen animar-izquierda">
+
+            <img src="img/historia1.jpg"
+                 alt="Nuestra primera cita">
+
+        </div>
+
+        <div class="momento-texto animar-derecha">
+
+
+<div class="fecha-contenedor">
+
+    <div class="linea-fecha"></div>
+
+    <span class="fecha">
+
+        8 Octubre 2023
+
+    </span>
+
+</div>
+
+  <h3>
+
+Nos conocimos
+
+</h3>
+
+<p>
+
+Todo comenzó con un café que ninguno de los dos quería que terminara.
+
+</p>
+
+<p class="frase-recuerdo">
+
+    "Sin imaginarlo, ese día comenzó nuestra historia."
+
+</p>
+
+        </div>
+
+    </article>
+
+
+    <article class="momento momento-invertido">
+
+    <div class="momento-imagen animar-derecha">
+
+        <img src="img/historia2.jpg"
+             alt="Nuestro primer viaje">
+
+    </div>
+
+    <div class="momento-texto animar-izquierda">
+
+        <div class="fecha-contenedor">
+
+            <div class="linea-fecha"></div>
+
+            <span class="fecha">
+
+                15 Diciembre 2024
+
+            </span>
+
+        </div>
+
+        <h3>
+
+            Nuestra primera aventura
+
+        </h3>
+
+        <p>
+
+            Descubrimos que el mejor destino siempre sería estar juntos.
+
+        </p>
+
+        <p class="frase-recuerdo">
+
+            "Cada viaje nos acercó un poco más al futuro que soñábamos."
+
+        </p>
+
+    </div>
+
+</article>
+
+<article class="momento">
+
+    <div class="momento-imagen animar-izquierda">
+
+        <img src="img/historia3.jpg"
+             alt="Nuestro compromiso">
+
+    </div>
+
+    <div class="momento-texto animar-derecha">
+
+        <div class="fecha-contenedor">
+
+            <div class="linea-fecha"></div>
+
+            <span class="fecha">
+
+                22 NOVIEMBRE 2025
+
+            </span>
+
+        </div>
+
+        <h3>
+
+            Nos comprometimos
+
+        </h3>
+
+        <p>
+
+            Ese día comprendimos que queríamos
+            compartir cada amanecer,
+            cada reto y cada alegría
+            por el resto de nuestras vidas.
+
+        </p>
+
+        <div class="detalle-compromiso">
+
+            <span>💍</span>
+
+        </div>
+
+        <p class="frase-recuerdo">
+
+            "El mejor sí comenzó mucho antes del altar."
+
+        </p>
+
+    </div>
+
+</article>
+
+<article class="momento momento-invertido">
+    <div class="momento-imagen animar-derecha">
+
+    <img src="img/historia4.jpg"
+         alt="Nuestro para siempre">
+
+</div>
+<div class="momento-texto animar-izquierda">
+
+    <div class="fecha-contenedor">
+
+    <div class="linea-fecha"></div>
+
+    <span class="fecha">
+
+        21 NOVIEMBRE 2026
+
+    </span>
+
+</div>
+
+<h3>
+
+Nuestro para siempre
+
+</h3>
+
+<p>
+
+Después de cada risa,
+cada viaje y cada sueño compartido,
+estamos listos para comenzar
+la aventura más hermosa de nuestras vidas.
+
+</p>
+
+<p class="frase-recuerdo">
+
+    "Lo mejor de nuestra historia...
+    apenas está por comenzar."
+
+</p>
+
+</div>
+
+</article>
+
+</section>
+
+<section class="ceremonia">
+
+    <h2 class="titulo-seccion animar-escala">
+
+        Ceremonia
+
+    </h2>
+
+    <p class="subtitulo-seccion animar">
+
+        Con la bendición de Dios y de nuestras familias,
+        queremos compartir contigo este momento tan especial.
+
+    </p>
+
+    <div class="ceremonia-contenedor">
+
+        <div class="ceremonia-imagen animar-izquierda">
+
+            <img
+                src="img/iglesia.jpg"
+                alt="Lugar de la ceremonia">
+
+        </div>
+
+        <div class="ceremonia-info animar-derecha">
+
+            <h3> Catedral del Espíritu Santo </h3>
+
+            <p>
+
+            21 de noviembre de 2026
+
+            </p>
+
+            <p>
+
+            10:00 AM
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="recepcion">
+
+    <h2 class="titulo-seccion animar-escala">
+
+        Recepción
+
+    </h2>
+
+    <p class="subtitulo-seccion animar">
+
+        Después de la ceremonia,
+        nos encantará celebrar contigo
+        este día inolvidable.
+
+    </p>
+
+    <div class="recepcion-contenedor">
+
+        <div class="recepcion-imagen animar-derecha">
+
+            <img
+                src="img/recepcion.jpg"
+                alt="Lugar de la recepción">
+
+        </div>
+
+        <div class="recepcion-info animar-izquierda">
+
+            <h3> Hotel Loma Real Inn </h3>
+
+            <p>21 de noviembre de 2026</p>
+
+            <p> 13:00 PM</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="confirmacion">
+
+    <h2 class="titulo-seccion animar-escala">
+
+        Confirmación de asistencia
+
+    </h2>
+
+    <p class="subtitulo-seccion animar">
+
+        Tu presencia es muy importante para nosotros.
+        Agradeceremos que confirmes tu asistencia antes del 15 de octubre de 2026.
+
+    </p>
+
+    <div class="confirmacion-card animar">
+
+        <h3>
+
+            Fecha límite para confirmar
+
+        </h3>
+
+        <p>
+
+            15 de octubre de 2026
+
+        </p>
+
+        <a
+            href="https://wa.me/50251129736?text=Hola%2C%20les%20escribo%20para%20confirmar%20mi%20asistencia%20a%20la%20boda%20de%20C%C3%A9sar%20%26%20Aracely%20%F0%9F%92%8D%0A%0ANombre%3A%20%0A%C2%BFAsistir%C3%A9%3F%20(S%C3%AD%2FNo)%3A%20%0AN%C3%BAmero%20de%20personas%3A%20"
+            class="boton-principal"
+            target="_blank"
+            rel="noopener">
+
+    Confirmar por WhatsApp
+
+</a>
+
+    </div>
+
+</section>
+
+<section class="recuerdos">
+
+    <h2 class="titulo-seccion animar-escala">
+
+        Comparte tus recuerdos
+
+    </h2>
+
+    <p class="subtitulo-seccion animar">
+
+        Nos encantará revivir este día a través de las fotografías
+        que captures durante nuestra boda.
+
+    </p>
+
+    <div class="recuerdos-card animar">
+
+        <div class="qr-placeholder">
+
+            QR
+
+        </div>
+
+        <p>
+
+            Escanea el código para compartir
+            las fotografías de nuestra boda.
+
+        </p>
+
+        <a href="#" class="boton-principal">
+
+    Compartir mis recuerdos
+
+</a>
+
+    </div>
+
+</section>
+
+<section class="despedida animar">
+
+    <h2 class="titulo-seccion">
+
+        Gracias por acompañarnos
+
+    </h2>
+
+    <p class="subtitulo-seccion">
+
+        Esperamos compartir contigo uno de los días
+        más felices de nuestras vidas.
+
+    </p>
+
+    <div class="firma">
+
+    <h3>
+
+        César & Aracely
+
+    </h3>
+
+    <p>
+
+        21 de noviembre de 2026
+
+    </p>
+
+</div>
+
+</section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

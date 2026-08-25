@@ -1,0 +1,3 @@
+Coloca aquí tu archivo de música con el nombre exacto: musica.mp3
+
+Ejemplo de ruta final: boda/audio/musica.mp3

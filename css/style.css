@@ -1,0 +1,1076 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Fuente general */
+body{
+    font-family:Cormorant Garamond, serif;
+}
+
+/* Primera pantalla */
+.hero{
+
+    height:100vh;
+
+    background-image:url("../img/portada.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero{
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+/* Fondo oscuro transparente */
+.overlay{
+
+    background:rgba(0,0,0,.45);
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-align:center;
+
+}
+.overlay h2{
+
+    font-size:22px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+
+}
+
+.overlay h1{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:110px;
+
+    font-weight:normal;
+
+    margin-bottom:20px;
+
+}
+
+
+.overlay span{
+
+    color:#D4AF37;
+
+}
+
+.overlay p{
+
+    font-size:28px;
+
+    margin-bottom:40px;
+
+}
+
+.overlay a{
+
+    padding:18px 55px;
+
+    border:2px solid #D4AF37;
+
+    background:#D4AF37;
+
+    color:white;
+
+    font-size:20px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+}
+
+.overlay a:hover{
+
+    transform:translateY(-5px);
+
+    background:transparent;
+
+    color:white;
+
+}
+
+#contenido{
+
+    display:none;
+
+    min-height:100vh;
+
+    background:#faf7f2;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+}
+
+.contador{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#faf7f2;
+
+}
+
+.contador h2{
+
+    font-size:22px;
+
+    letter-spacing:10px;
+
+    text-transform:uppercase;
+
+    font-weight:400;
+
+    color:#A8782A;
+
+    margin-bottom:50px;
+
+}
+
+.tiempo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:0;
+
+}
+
+.caja{
+
+    width:140px;
+
+    height:140px;
+
+    background:transparent;
+
+    border:1px solid #D4AF37;
+
+    border-radius:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.caja::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:8px;
+
+    border:1px solid rgba(212,175,55,.35);
+
+}
+
+.caja span{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:56px;
+
+    color:#A8782A;
+
+    font-weight:500;
+
+    line-height:1;
+
+}
+
+.caja p{
+
+    margin-top:10px;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#8a8a8a;
+
+}
+
+.separador-tiempo{
+
+    font-size:40px;
+
+    color:#D4AF37;
+
+    margin:0 18px;
+
+    font-weight:300;
+
+    align-self:flex-start;
+
+    margin-top:35px;
+
+}
+
+.mensaje{
+
+    margin-top:60px;
+
+    font-size:28px;
+
+    color:#555;
+
+    text-align:center;
+
+    font-style:italic;
+
+}
+
+.linea-decorativa{
+
+    width:250px;
+
+    height:2px;
+
+    background:#C8A96A;
+
+    margin-top:40px;
+
+    border-radius:10px;
+
+}
+
+.bienvenida{
+
+    min-height:70vh;
+
+    background:#faf7f2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px;
+
+    gap:35px;
+
+}
+
+.subtitulo{
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#A8782A;
+
+    font-size:18px;
+
+}
+
+.bienvenida h2{
+
+    font-size:48px;
+
+    max-width:850px;
+
+    font-weight:400;
+
+    line-height:1.5;
+
+    color:#444;
+
+}
+
+.titulo-seccion{
+
+    font-size:60px;
+
+    font-weight:400;
+
+    color:#A8782A;
+
+    text-align:center;
+
+}
+
+.subtitulo-seccion{
+
+    font-size:26px;
+
+    color:#555;
+
+    text-align:center;
+
+    max-width:800px;
+
+    line-height:1.8;
+
+}
+
+.historia{
+
+    min-height:100vh;
+
+    background:#faf7f2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:120px 20px;
+
+    position:relative;
+
+}
+.momento{
+
+    width:100%;
+
+    max-width:1100px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+    margin-top:80px;
+
+}
+.momento-imagen{
+
+    flex:1;
+
+}
+.momento-imagen img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    display:block;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+    border:8px solid white;
+
+}
+.momento-texto{
+
+    flex:1;
+
+}
+
+.momento-texto h3{
+
+    margin:20px 0;
+
+    font-size:30px;
+
+    font-weight:110;
+
+}
+.momento-texto p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.fecha-contenedor{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:55px 0;
+
+}
+
+.linea-fecha{
+
+    width:40px;
+
+    height:1px;
+
+    background:#A8782A;
+
+}
+
+.fecha{
+
+    color:#A8782A;
+
+    letter-spacing:3px;
+
+    font-size:24px;
+
+    text-transform:uppercase;
+
+}
+
+.frase-recuerdo{
+
+    margin-top:35px;
+
+    font-style:italic;
+
+    font-size:18px;
+
+    color:#888;
+
+    line-height:1.8;
+
+}
+
+.momento-invertido{
+
+    flex-direction:row-reverse;
+
+}
+
+.detalle-compromiso{
+
+    margin:35px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.detalle-compromiso::before,
+
+.detalle-compromiso::after{
+
+    content:"";
+
+    width:60px;
+
+    height:1px;
+
+    background:#A8782A;
+
+}
+
+.detalle-compromiso span{
+
+    font-size:22px;
+
+}
+
+.linea-tiempo{
+
+    position:absolute;
+
+    top:260px;
+
+    bottom:100px;
+
+    left:50%;
+
+    width:2px;
+
+    background:#E6D8C3;
+
+    transform:translateX(-50%);
+
+}
+
+.ceremonia,
+.recepcion{
+
+    padding: 30px 10%;
+
+}
+
+.ceremonia-contenedor,.recepcion-contenedor{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 80px;
+
+    margin-top: 45px;
+
+}
+
+.ceremonia-imagen,.recepcion-imagen{
+
+    flex:1;
+
+}
+
+.ceremonia-imagen img,.recepcion-imagen img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    display:block;
+
+}
+
+.ceremonia-info,.recepcion-info{
+
+    flex:1;
+
+}
+
+.ceremonia-info h3,.recepcion-info h3{
+
+    font-size:46px;
+
+    font-weight:400;
+
+    margin-bottom:30px;
+
+}
+
+.ceremonia-info p,.recepcion-info p{
+
+    font-size:22px;
+
+    line-height:1.6;
+
+    margin-bottom:10px;
+
+}
+
+.confirmacion{
+
+    padding: 80px 10%;
+
+}
+
+.confirmacion-card{
+
+    max-width: 650px;
+
+    margin: 50px auto 0;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    background: #FFFFFF;
+
+}
+
+.confirmacion-card h3{
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    margin-bottom: 20px;
+
+}
+
+.confirmacion-card p{
+
+    font-size: 22px;
+
+    color: #555;
+
+    margin-bottom: 40px;
+
+}
+
+.recuerdos{
+
+    padding:80px 10%;
+
+    text-align:center;
+
+}
+
+.recuerdos-card{
+
+    max-width:650px;
+
+    margin:50px auto 0;
+
+    padding:50px;
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+}
+
+.qr-placeholder{
+
+    width:250px;
+
+    height:250px;
+
+    margin:40px auto;
+
+    border:2px dashed #A8782A;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:36px;
+
+    color:#A8782A;
+
+}
+
+.recuerdos-card p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.despedida{
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+.firma{
+
+    margin-top:60px;
+
+}
+
+.firma h3{
+
+    font-size:48px;
+
+    font-weight:400;
+
+    color:#A8782A;
+
+}
+.firma p{
+
+    margin-top:15px;
+
+    font-size:22px;
+
+    color:#666;
+
+}
+
+/* ===========================
+   ANIMACIONES AL HACER SCROLL
+=========================== */
+
+.animar{
+    opacity:0;
+    transform:translateY(40px);
+    transition:opacity .9s ease, transform .9s ease;
+}
+
+.animar-izquierda{
+    opacity:0;
+    transform:translateX(-90px);
+    transition:opacity 1s ease, transform 1s ease;
+}
+
+.animar-derecha{
+    opacity:0;
+    transform:translateX(90px);
+    transition:opacity 1s ease, transform 1s ease;
+}
+
+.animar-escala{
+    opacity:0;
+    transform:scale(.8);
+    transition:opacity .9s ease, transform .9s ease;
+}
+
+.animar.mostrar,
+.animar-izquierda.mostrar,
+.animar-derecha.mostrar,
+.animar-escala.mostrar{
+    opacity:1;
+    transform:none;
+}
+
+/* Respeta a quienes prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce){
+    .animar,
+    .animar-izquierda,
+    .animar-derecha,
+    .animar-escala{
+        opacity:1;
+        transform:none;
+        transition:none;
+    }
+}
+
+/* ===========================
+   BOTÓN DE MÚSICA
+=========================== */
+
+.control-musica{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:2px solid #D4AF37;
+
+    background:#faf7f2;
+
+    color:#A8782A;
+
+    font-size:24px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+    z-index:999;
+
+    transition:transform .3s ease;
+
+}
+
+.control-musica:hover{
+
+    transform:scale(1.08);
+
+}
+
+.control-musica.sonando .icono-musica{
+
+    animation:girar 3.5s linear infinite;
+
+}
+
+@keyframes girar{
+
+    from{ transform:rotate(0deg); }
+
+    to{ transform:rotate(360deg); }
+
+}
+
+/* ===========================
+   BOTÓN PRINCIPAL
+=========================== */
+
+.boton-principal{
+
+    display:inline-block;
+
+    padding:16px 40px;
+
+    background:#A8782A;
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.boton-principal:hover{
+
+    opacity:.9;
+
+}
+/* ===========================
+   RESPONSIVE - TABLET (hasta 900px)
+=========================== */
+@media (max-width:900px){
+
+    .overlay h1{
+        font-size:70px;
+    }
+
+    .momento,
+    .momento-invertido{
+        flex-direction:column;
+        gap:35px;
+    }
+
+    .ceremonia-contenedor,
+    .recepcion-contenedor{
+        flex-direction:column;
+        gap:35px;
+    }
+
+    .linea-tiempo{
+        left:20px;
+        transform:none;
+    }
+
+    .titulo-seccion{
+        font-size:46px;
+    }
+
+    .bienvenida h2{
+        font-size:34px;
+    }
+}
+
+/* ===========================
+   RESPONSIVE - CELULAR (hasta 600px)
+=========================== */
+@media (max-width:600px){
+
+    .overlay h2{
+        font-size:16px;
+        letter-spacing:5px;
+    }
+
+    .overlay h1{
+        font-size:50px;
+    }
+
+    .overlay p{
+        font-size:20px;
+    }
+
+    .overlay a,
+    .boton-principal{
+        padding:14px 32px;
+        font-size:16px;
+    }
+
+    .bienvenida{
+        padding:40px 24px;
+    }
+
+    .bienvenida h2{
+        font-size:26px;
+    }
+
+    .subtitulo{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .contador h2{
+        font-size:16px;
+        letter-spacing:5px;
+    }
+
+    .tiempo{
+        gap:0;
+    }
+
+    .caja{
+        width:64px;
+        height:74px;
+    }
+
+    .caja span{
+        font-size:26px;
+    }
+
+    .caja p{
+        font-size:9px;
+        letter-spacing:1px;
+        margin-top:6px;
+    }
+
+    .separador-tiempo{
+        font-size:22px;
+        margin:0 6px;
+        margin-top:18px;
+    }
+
+    .historia{
+        padding:70px 20px;
+    }
+
+    .titulo-seccion{
+        font-size:34px;
+    }
+
+    .subtitulo-seccion{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .momento{
+        margin-top:50px;
+        gap:20px;
+    }
+
+    .momento-texto h3{
+        font-size:24px;
+    }
+
+    .momento-texto p{
+        font-size:18px;
+    }
+
+    .fecha{
+        font-size:16px;
+    }
+
+    .ceremonia,
+    .recepcion,
+    .confirmacion,
+    .recuerdos,
+    .despedida{
+        padding:50px 6%;
+    }
+
+    .ceremonia-info h3,
+    .recepcion-info h3{
+        font-size:30px;
+    }
+
+    .ceremonia-info p,
+    .recepcion-info p{
+        font-size:18px;
+    }
+
+    .confirmacion-card,
+    .recuerdos-card{
+        padding:30px 20px;
+    }
+
+    .confirmacion-card h3{
+        font-size:26px;
+    }
+
+    .confirmacion-card p,
+    .recuerdos-card p{
+        font-size:18px;
+    }
+
+    .qr-placeholder{
+        width:180px;
+        height:180px;
+    }
+
+    .firma h3{
+        font-size:34px;
+    }
+
+    .control-musica{
+        width:46px;
+        height:46px;
+        bottom:16px;
+        right:16px;
+        font-size:20px;
+    }
+}
