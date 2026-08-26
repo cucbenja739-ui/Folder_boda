@@ -92,9 +92,6 @@ actualizarContador();
 setInterval(actualizarContador,1000);
 
 
-// ===========================
-// Animaciones al hacer scroll
-// ===========================
 
 const elementosAnimados = document.querySelectorAll(
     ".animar, .animar-izquierda, .animar-derecha, .animar-escala"
@@ -108,7 +105,9 @@ const observador = new IntersectionObserver(function(entradas){
 
             entrada.target.classList.add("mostrar");
 
-            observador.unobserve(entrada.target);
+        } else {
+
+            entrada.target.classList.remove("mostrar");
 
         }
 
@@ -116,7 +115,9 @@ const observador = new IntersectionObserver(function(entradas){
 
 }, {
 
-    threshold: 0.15
+    threshold: 0.1,
+
+    rootMargin: "0px 0px -15% 0px"
 
 });
 
